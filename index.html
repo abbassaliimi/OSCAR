@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OSCAR PWA</title>
+  <link rel="stylesheet" href="leaflet/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</head>
+<body>
+  <div style="border-bottom: 3px solid #ccc; padding:10px; font-size: 1.2em;">OSCAR</div>
+  <div id="map" style="bottom:0;"></div>
+  <script src="leaflet/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
