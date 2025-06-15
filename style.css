@@ -1,10 +1,93 @@
-body {
+html, body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 48px;
+  background-color: #1976d2;
+  color: white;
   text-align: center;
+  line-height: 48px;
+  font-weight: bold;
+  flex-shrink: 0;
 }
 
 #map {
-  height: 90vh;
+  flex: 1;
   width: 100%;
+}
+
+footer {
+  height: 60px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  flex-shrink: 0;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.75em;
+  color: #444;
+  text-decoration: none;
+}
+
+.icon.active {
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.button-group {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 0.85em;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none; 
+  color: white;          
+  background-color: gray;
+  text-align: center;
+  white-space: nowrap;
+}
+a.btn {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.btn-linkedin {
+  background-color: #0077b5;
+}
+
+.btn-map {
+  background-color: #34a853; /* Google Maps green */
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
