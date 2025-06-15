@@ -8,7 +8,7 @@ if (navigator.geolocation) {
       const lng = position.coords.longitude;
 
       // Set the map view to the user's location
-      map.setView([lat, lng], 13);
+      map.setView([lat, lng], 11);
 
       // Optional: add a marker at the user's location
       L.marker([lat, lng])
